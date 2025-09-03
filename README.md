@@ -3,8 +3,8 @@
 An AI-powered content and image generation app built with React (Vite) and an Express backend. Features include generating articles, blog titles, AI images, resume reviews, and image background/object removal. Authentication and usage limits are managed via Clerk; storage via Cloudinary; data via Neon/Postgres.
 
 ### Live Demo
-- Frontend: [[Live Site])
-- API Base URL: `https://your-live-backend-url.com/api`
+- Frontend: (https://stack-mind.vercel.app/))
+- API Base URL: `(https://stack-mind-server-omega.vercel.app/)`
 
 ### Screenshots
 - Home / Hero
