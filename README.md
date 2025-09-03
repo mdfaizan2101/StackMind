@@ -223,8 +223,3 @@ User routes are mounted under `/api/user` and also require auth:
 - Serve frontend from a static host (e.g., Vercel/Netlify) and point API to your deployed backend URL.
 - In production, configure the frontend to use absolute API base URL if not using a reverse proxy.
 - Secure environment variables; never commit `.env` files.
-
----
-
-## License
-MIT (see LICENSE if present).
