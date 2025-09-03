@@ -9,15 +9,39 @@ An AI-powered content and image generation app built with React (Vite) and an Ex
 ### Screenshots
 - Home / Hero
   
-  ![Home](client/public/screenshot-home.png)
+  ![Home](screenshots/home.png)
 
 - Dashboard
   
-  ![Dashboard](client/public/screenshot-dashboard.png)
+  ![Dashboard](screenshots/dashboard.png)
 
 - Generate Article
   
-  ![Generate Article](client/public/screenshot-generate-article.png)
+  ![Generate Article](screenshots/generateArticle.png)
+
+- Generate Title
+  
+  ![Generate Title](screenshots/generateTitle.png)
+
+- Generate Image
+  
+  ![Generate Image](screenshots/generateImage.png)
+
+- Remove Background 
+  
+  ![Remove Background](screenshots/removeBackground.png)
+
+- Remove Background Object
+  
+  ![Remove Background Object](screenshots/removeBackgroundObject.png)
+
+- Resume Reviewer
+  
+  ![Resume Reviewer](screenshots/resumeReviewer.png)
+
+- Community
+  
+  ![Community](screenshots/community.png)
 
 ### Tech Stack
 - **Frontend**: React 19, Vite 7, Tailwind CSS 4, React Router, Axios, Clerk React, React Markdown, React Hot Toast
