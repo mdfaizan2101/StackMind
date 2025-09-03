@@ -3,7 +3,7 @@
 An AI-powered content and image generation app built with React (Vite) and an Express backend. Features include generating articles, blog titles, AI images, resume reviews, and image background/object removal. Authentication and usage limits are managed via Clerk; storage via Cloudinary; data via Neon/Postgres.
 
 ### Live Demo
-- Frontend: [[Live Site](https://your-live-frontend-url.com)](https://stackmind.vercel.app/)
+- Frontend: [[Live Site])
 - API Base URL: `https://your-live-backend-url.com/api`
 
 ### Screenshots
@@ -223,8 +223,3 @@ User routes are mounted under `/api/user` and also require auth:
 - Serve frontend from a static host (e.g., Vercel/Netlify) and point API to your deployed backend URL.
 - In production, configure the frontend to use absolute API base URL if not using a reverse proxy.
 - Secure environment variables; never commit `.env` files.
-
----
-
-## License
-MIT (see LICENSE if present).
