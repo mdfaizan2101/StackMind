@@ -3,7 +3,7 @@ import { Hash, Sparkles } from 'lucide-react';
 import React, { useState } from 'react'
 import toast from 'react-hot-toast';
 import Markdown from 'react-markdown';
-import axios from 'axios'
+import api from '../utils/api'
 
 const BlogTitles = () => {
 
@@ -23,7 +23,7 @@ const BlogTitles = () => {
         const prompt = `Generate a blog title for the keyword ${input} in the category ${selectedCategory}`
 
         
-        const { data } = await axios.post('/api/ai/generate-blog-title', {prompt}, {headers: {Authorization: `Bearer ${await getToken()}`}} )
+        const { data } = await api.post('/api/ai/generate-blog-title', {prompt}, {headers: {Authorization: `Bearer ${await getToken()}`}} )
 
         if (data.success) {
           setContent(data.content)

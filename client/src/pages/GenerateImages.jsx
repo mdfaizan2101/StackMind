@@ -1,6 +1,6 @@
 import { Hash, Image, Sparkles } from 'lucide-react';
 import React, { useState } from 'react'
-import axios from 'axios'
+import api from '../utils/api'
 import { useAuth } from '@clerk/clerk-react';
 import toast from 'react-hot-toast';
 
@@ -27,7 +27,7 @@ const GenerateImages = () => {
 
           const prompt = `Generate an image of ${input} int the style ${selectedStyle}`
 
-          const { data } = await axios.post('/api/ai/generate-image', {prompt, publish}, {headers: {Authorization: `Bearer ${await getToken()}`}} )
+          const { data } = await api.post('/api/ai/generate-image', {prompt, publish}, {headers: {Authorization: `Bearer ${await getToken()}`}} )
 
           if (data.success) {
             setContent(data.content)

@@ -2,7 +2,7 @@ import { useAuth, useUser } from '@clerk/clerk-react';
 import React, { useEffect, useState } from 'react'
 import { dummyPublishedCreationData } from '../assets/assets';
 import { Heart } from 'lucide-react';
-import axios from 'axios';
+import api from '../utils/api';
 import toast from 'react-hot-toast';
 
 
@@ -17,7 +17,7 @@ const Community = () => {
 
   const fetchCreations = async () => {
     try {
-      const { data } = await axios.get('/api/user/get-published-creations', {
+      const { data } = await api.get('/api/user/get-published-creations', {
         headers: { Authorization: `Bearer ${await getToken()}` }
       })
       if (data.success) {
@@ -36,7 +36,7 @@ const Community = () => {
 
   const imageLikeToggle = async (id) => {
     try {
-      const { data } = await axios.post('/api/user/toggle-like-creation', { id }, {
+      const { data } = await api.post('/api/user/toggle-like-creation', { id }, {
         headers: { Authorization: `Bearer ${await getToken()}` }
       })
 

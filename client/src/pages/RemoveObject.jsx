@@ -1,6 +1,6 @@
 import { Scissors, Sparkles } from 'lucide-react'
 import React, { useState } from 'react'
-import axios from 'axios'
+import api from '../utils/api'
 import { useAuth } from '@clerk/clerk-react';
 import toast from 'react-hot-toast';
 
@@ -34,7 +34,7 @@ const RemoveObject = () => {
           formData.append('object', object)
 
 
-          const { data } = await axios.post('/api/ai/remove-image-object', formData, {headers: {Authorization: `Bearer ${await getToken()}`}})
+          const { data } = await api.post('/api/ai/remove-image-object', formData, {headers: {Authorization: `Bearer ${await getToken()}`}})
 
           if (data.success) {
             
